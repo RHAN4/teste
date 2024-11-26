@@ -36,3 +36,12 @@ SELECT * FROM pessoa
 
 ALTER TABLE livrosLidos
 MODIFY COLUMN nomeLivro VARCHAR(200);
+
+ALTER TABLE livrosLidos
+ADD COLUMN paginas INT NOT NULL;
+
+ALTER TABLE livrosLidos
+ADD COLUMN anoPublicacao YEAR NOT NULL;
+
+ALTER TABLE pessoa
+ADD COLUMN genero ENUM('F', 'M');
